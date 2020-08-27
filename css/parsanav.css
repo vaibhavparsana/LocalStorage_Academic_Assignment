@@ -1,0 +1,146 @@
+body {
+    margin: 0px;
+    background: linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6));
+    font-family: Courier;
+}
+
+/* header */
+
+header {
+    text-align: center;
+    font-size: 35px;
+    padding: 30px;
+    margin: 30px;
+    color: rgba(44, 40, 40, 0.568);
+    font-weight: bold;
+}
+
+/* grid */
+
+.container {
+    display: grid;
+    grid-template-areas: "nameLabel cName" "emailLabel cEmail" "productLabel product" "quantityLabel quantity" "priceLabel price" "checkout checkout";
+    grid-gap: 10px;
+    font-size: 20px;
+    margin: auto;
+    background: white;
+    border: 0 none;
+    box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.4);
+    width: 600px;
+    padding: 5%;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.nameLabel {
+    grid-area: nameLabel;
+    margin: 8px 0px;
+}
+
+#cName {
+    grid-area: cName;
+}
+
+#cEmail {
+    grid-area: cEmail;
+}
+
+.emailLabel {
+    grid-area: emailLabel;
+    margin: 8px 0px;
+}
+
+.productLabel {
+    grid-area: productLabel;
+    margin: 8px 0px;
+}
+
+#product {
+    grid-area: product;
+}
+
+.quantityLabel {
+    grid-area: quantityLabel;
+    margin: 8px 0px;
+}
+
+#quantity {
+    grid-area: quantity;
+}
+
+.priceLabel {
+    grid-area: priceLabel;
+}
+
+#price {
+    grid-area: price;
+    font-weight: normal;
+}
+
+
+.checkout {
+    grid-area: checkout;
+    display: grid;
+    grid-template-areas: "save next";
+    grid-gap: 10px;
+}
+
+#save {
+    grid-area: save;
+    background-color: rgba(98, 178, 57, 0.62);
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    font-family: Courier;
+}
+
+#next {
+    grid-area: next;
+    background-color: rgba(198, 77, 77, 0.88);
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    font-family: Courier;
+}
+
+#next a {
+    text-decoration: none;
+    color: black;
+}
+
+#save:hover, #next a:hover {
+    color: white;
+}
+
+input[type=text], input[type=email], input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Courier;
+}
+
+/* foooter */
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+img {
+    width: 50px;
+    margin: 5px;
+}
+
+p {
+    margin: 0px;
+}
+
+#text {
+    margin: 5px;
+}

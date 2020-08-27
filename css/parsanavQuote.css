@@ -1,0 +1,98 @@
+body {
+    margin: 0px;
+    background: linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6));
+    font-family: Courier;
+}
+
+/* header */
+
+header {
+    text-align: center;
+    font-size: 35px;
+    padding: 30px;
+    margin: 30px;
+    color: rgba(44, 40, 40, 0.568);
+    font-weight: bold;
+}
+/* foooter */
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+img {
+    width: 50px;
+    margin: 5px;
+}
+
+p {
+    margin: 0px;
+}
+
+#text {
+    margin: 5px;
+}
+
+
+/* quote */
+.grid-container {
+    display: grid;
+    grid-template-areas: "nameLabelQuote cNameQuote"
+    "emailLabelQuote cEmailQuote"
+    "productLabelQuote productQuote"
+    "quantityLabelQuote quantityQuote"
+    "priceLabelQuote priceQuote"
+    "totalLabelQuote calPriceQuote";
+        grid-gap: 10px;
+    font-size: 20px;
+    margin: auto;
+    background: white;
+    border: 0 none;
+    box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.4);
+    width: 635px;
+    padding: 5%;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.nameLabelQuote {
+    grid-area:nameLabelQuote;
+}
+.emailLabelQuote {
+    grid-area:emailLabelQuote;
+}
+.productLabelQuote {
+    grid-area:productLabelQuote;
+}
+.quantityLabelQuote {
+    grid-area:quantityLabelQuote;
+}
+.priceLabelQuote {
+    grid-area:priceLabelQuote;
+}
+.totalLabelQuote {
+    grid-area:totalLabelQuote;
+}
+
+#cNameQuote{
+    grid-area: cNameQuote;
+}
+#cEmailQuote{
+    grid-area: cEmailQuote;
+}
+#productQuote{
+    grid-area: productQuote;
+}
+#priceQuote{
+    grid-area: priceQuote;
+}
+#quantityQuote{
+    grid-area: quantityQuote;
+}
+#calPriceQuote{
+    grid-area: calPriceQuote;
+}
